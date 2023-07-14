@@ -7,11 +7,8 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource(collectionResourceRel ="cursos",path = "cursos" )
-
 public interface CursoRepository extends PagingAndSortingRepository<Curso,Integer>, CrudRepository<Curso, Integer>{
-    
-    
+        
     List<Curso> finByNombre(@Param("nombre")String nombre);
-
 
 }

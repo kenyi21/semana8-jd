@@ -10,9 +10,8 @@ import jakarta.persistence.Table;
 @Table(name = "curso")
 public class Curso {
 
-@Id
-@GeneratedValue(strategy = GenerationType.AUTO)
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String nombre;
     private Integer creditos;
